@@ -17,10 +17,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNF-Ez-Hia">
-                    <rect key="frame" x="8" y="4" width="442" height="52.5"/>
+                    <rect key="frame" x="8" y="4" width="442" height="49.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5Ih-rV-yYp">
-                            <rect key="frame" x="38" y="11" width="396" height="33.5"/>
+                            <rect key="frame" x="38" y="8" width="396" height="33.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lso-rR-LGh">
                                     <rect key="frame" x="0.0" y="0.0" width="396" height="16"/>
@@ -48,10 +48,10 @@
                     <constraints>
                         <constraint firstItem="sU0-iK-Oe9" firstAttribute="leading" secondItem="gNF-Ez-Hia" secondAttribute="leading" constant="8" id="0UR-HL-Abs"/>
                         <constraint firstAttribute="trailing" secondItem="5Ih-rV-yYp" secondAttribute="trailing" constant="8" id="3gU-9M-JBw"/>
-                        <constraint firstItem="5Ih-rV-yYp" firstAttribute="top" secondItem="gNF-Ez-Hia" secondAttribute="top" constant="11" id="5Cz-8w-b2w"/>
                         <constraint firstItem="5Ih-rV-yYp" firstAttribute="leading" secondItem="sU0-iK-Oe9" secondAttribute="trailing" constant="8" id="SeJ-C4-TN7"/>
                         <constraint firstAttribute="bottom" secondItem="5Ih-rV-yYp" secondAttribute="bottom" constant="8" id="d8B-SW-rPx"/>
                         <constraint firstItem="sU0-iK-Oe9" firstAttribute="top" secondItem="gNF-Ez-Hia" secondAttribute="top" constant="8" id="prk-b3-rPD"/>
+                        <constraint firstItem="5Ih-rV-yYp" firstAttribute="top" secondItem="sU0-iK-Oe9" secondAttribute="top" id="soe-bl-rh6"/>
                     </constraints>
                 </view>
             </subviews>
