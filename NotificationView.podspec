@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name                        = "NotificationView"
+  spec.name                        = "HBNotificationView"
   spec.version                     = "1.0"
   spec.summary                     = "Show messages like push notification success/error/info/loading"
   spec.homepage                    = "https://github.com/Brsoyan/NotificationView"
