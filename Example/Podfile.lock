@@ -1,0 +1,16 @@
+PODS:
+  - HBNotificationView (1.0)
+
+DEPENDENCIES:
+  - HBNotificationView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HBNotificationView
+
+SPEC CHECKSUMS:
+  HBNotificationView: 4863682c929fd17fe5ac68978d0a4f54ba6291f5
+
+PODFILE CHECKSUM: e224a24e576aaec31b678875a10fa042ed6bcd32
+
+COCOAPODS: 1.6.1

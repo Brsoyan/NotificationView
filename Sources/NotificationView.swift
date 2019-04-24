@@ -9,7 +9,7 @@
 import UIKit
 
 extension NotificationView {
-    enum Style {
+    public enum Style {
         case success
         case error
         case info
@@ -17,7 +17,7 @@ extension NotificationView {
     }
 }
 
-class NotificationView: UIView, UIGestureRecognizerDelegate {
+public class NotificationView: UIView, UIGestureRecognizerDelegate {
     
     static let animationDuration: TimeInterval = 0.25
     static let timeOfLive: TimeInterval = 3
@@ -45,7 +45,7 @@ class NotificationView: UIView, UIGestureRecognizerDelegate {
         return CGRect(x: 0, y: yCoordinate, width: UIScreen.main.bounds.width, height: height)
     }
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         containerView.backgroundColor = .gray
         containerView.layer.cornerRadius = 8
@@ -63,11 +63,11 @@ class NotificationView: UIView, UIGestureRecognizerDelegate {
         addGestureRecognizer(longPressGesture)
     }
     
-    static func show(style: Style, titileText: String? = nil, messageText: String? = nil) {
+    public static func show(style: Style, titileText: String? = nil, messageText: String? = nil) {
         NotificationView.fromNib(initialFrame).showInWindow(style: style, titileText: titileText, messageText: messageText)
     }
     
-    func showInWindow(style: Style, titileText: String?, messageText: String?) {
+    private func showInWindow(style: Style, titileText: String?, messageText: String?) {
         let window = UIApplication.shared.keyWindow
         window!.addSubview(self)
         show(style: style, titileText: titileText, messageText: messageText)
@@ -107,7 +107,7 @@ class NotificationView: UIView, UIGestureRecognizerDelegate {
     
     // MARK: - UIGestureRecognizerDelegate
     
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    private func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         if gestureRecognizer == panGesture || gestureRecognizer == longPressGesture {
             return true
         }

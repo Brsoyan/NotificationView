@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HBNotificationView
 
 class ViewController: UIViewController {
 
