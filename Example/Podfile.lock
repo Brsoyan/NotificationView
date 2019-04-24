@@ -1,5 +1,5 @@
 PODS:
-  - HBNotificationView (1.0)
+  - HBNotificationView (1.1)
 
 DEPENDENCIES:
   - HBNotificationView
@@ -9,7 +9,7 @@ SPEC REPOS:
     - HBNotificationView
 
 SPEC CHECKSUMS:
-  HBNotificationView: 4863682c929fd17fe5ac68978d0a4f54ba6291f5
+  HBNotificationView: 793ec1fbd95c293101e2b21928d61048a2471990
 
 PODFILE CHECKSUM: e224a24e576aaec31b678875a10fa042ed6bcd32
 

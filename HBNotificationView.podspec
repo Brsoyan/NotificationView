@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.platform                       = :ios
   spec.name                        = "HBNotificationView"
   spec.ios.deployment_target       = '12.0'
-  spec.version                     = "1.1"
+  spec.version                     = "1.2"
   spec.summary                     = "Show messages like push notification success/error/info/loading"
   spec.homepage                    = "https://github.com/Brsoyan/NotificationView"
   spec.license                     = "MIT"
@@ -20,6 +20,7 @@ Pod::Spec.new do |spec|
   spec.source                      = { :git => "https://github.com/Brsoyan/NotificationView", :tag => "#{spec.version}" }
   spec.source_files                = "Sources/*.swift"
   spec.resources                   = "Resources/*.pdf", "Resources/*.xib",
+  spec.resource_bundles            = {'HBNotificationView' => ['HBNotificationView/Resources/*.*']}
   spec.swift_version               = "4.2"
 
 end
